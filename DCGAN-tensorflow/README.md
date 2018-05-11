@@ -33,6 +33,6 @@ python main.py --dataset market --options 1
 
 ### 2.Test
 ```bash
-python main.py --dataset market --options 5  --output_path gen_market  --sample_size 24000
+python main.py --dataset market --options 5  --output_path gen_0000  --sample_size 24000
 ```
 It will use your trained model and generate 24000 images for the following semi-supervised training. the generated images are stored in gen_market folder.
