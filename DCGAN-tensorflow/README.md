@@ -26,13 +26,13 @@ source activate dcgan
 ### 1.Train
 ```bash
 mkdir data
-ln -rs your_dataset_path/DukeMTMC-reID/bounding_box_train ./data/duke_train
-python main.py --dataset duke_train --train --input_height 128 --output_height 128 --options 1
+copy your dataset(market) to data folder
+python main.py --dataset market --options 1
 ```
-`duke_train` is the dir path which contains images. Here I use the (DukeMTMC-reID)[https://github.com/layumi/DukeMTMC-reID_evaluation] training set. You can change it to your dataset path.
+`market` is the dir path which contains images. You can change it to your dataset path.
 
 ### 2.Test
 ```bash
-python main.py --dataset duke_train --options 5  --output_path duke_256_48000  --sample_size 48000  --input_height 128 --output_height 128
+python main.py --dataset market --options 5  --output_path gen_market  --sample_size 24000
 ```
-It will use your trained model and generate 48000 images for the following semi-supervised training.
+It will use your trained model and generate 24000 images for the following semi-supervised training. the generated images are stored in gen_market folder.
