@@ -33,6 +33,7 @@ python main.py --dataset market --options 1
 
 ### 2.Test
 ```bash
-python main.py --dataset market --options 5  --output_path gen_0000  --sample_size 24000
+python main.py --dataset market --options 5  --output_path gen_market  --sample_size 24000
+python resizeImage.py
 ```
-It will use your trained model and generate 24000 images for the following semi-supervised training. the generated images are stored in gen_market folder.
+It will use your trained model and generate 24000 images for the following semi-supervised training. the generated images are stored in gen_market folder,  then run resizeImage.py,  the generated images will be resized into 126*64 stored in gen_0000 market.  after that, add gen_0000 to the training set of market, so the generated images will be used as training image to help model training.
