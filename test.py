@@ -80,13 +80,14 @@ use_gpu = torch.cuda.is_available()
 
 ######################################################################
 # Load model
+'''
 #----------single gpu training-----------------
 def load_network(network):
     save_path = os.path.join('./model',name,'net_%s.pth'%opt.which_epoch)
     network.load_state_dict(torch.load(save_path))
     return network
-
 '''
+
 #-----multi-gpu training---------
 def load_network(network):
     save_path = os.path.join('./model',name,'net_%s.pth'%opt.which_epoch)
@@ -100,7 +101,7 @@ def load_network(network):
     # load params
     network.load_state_dict(new_state_dict)
     return network
-'''
+
 ######################################################################
 # Extract feature
 # ----------------------
