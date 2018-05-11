@@ -34,6 +34,12 @@ python setup.py install
 ## Dataset & Preparation
 Download [Market1501 Dataset](http://www.liangzheng.org/Project/project_reid.html)
 
+Preparation: Put the images with the same id in one folder. You may use 
+```bash
+python prepare.py
+```
+Remember to change the dataset path to your own path.
+
 Preparation: change the name of the folder to 0 to n-1(where n is the number of class, i.e. the number of person),  the folder name is the label of each person (all the pictures under the same folder are the same person) 
 ```bash
 python changeIndex.py
