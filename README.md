@@ -82,10 +82,6 @@ Train the baseline by
 ```bash
 python train_baseline.py --use_dense
 ```
-or train the LSRO based model by
-```bash
-python train_LSRO.py --use_dense
-```
 
 `--name` the name of model.(ResNet or DesNet)
 
