@@ -10,7 +10,7 @@ We arrived **Rank@1=93.24%, mAP=90.68%** only with a very easy model.
 **re-rank strategy** is used to deal with the initial result, the details of re-rank method is available [here](https://github.com/zhunzhong07/person-re-ranking)
 
 
-## Model Structure（we simply alter the model from Residual Networks and DenseNet）
+## Model Structure（we simply alter the model from ResNet and DenseNet）
 You may learn more from `model.py`. 
 We add one linear layer(bottleneck), one batchnorm layer and relu.
 
@@ -130,7 +130,7 @@ It will output Rank@1, Rank@5, Rank@10 and mAP results.
 
 ### Conclusion
 
-**when the baseline result is not so high,  the generated images can help model training(see multi-gpu training, add GAN images VS not add) , thus can improve the performance(more robust) ,  while when the baseline result is high(rank-1, 0.934), its difficult to improve the result.  when batchsize is set to 32, the result is the best,  and single-gpu training achieves better result than multi-gpu training. **
+**when the baseline result is not so high,  the generated images can help model training(see multi-gpu training, add GAN images VS not add) , thus can improve the performance(more robust) ,  while when the baseline result is high(rank-1, 0.934), its difficult to improve the result.  when batchsize is set to 32, the result is the best,  and single-gpu training achieves better result than multi-gpu training.**
 
 ## Thanks
 
