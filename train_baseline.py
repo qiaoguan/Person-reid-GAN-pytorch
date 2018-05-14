@@ -169,7 +169,7 @@ class LSROloss(nn.Module):
         logpt=logpt.view(-1)           # N*1     original loss   
         flg=flg.view(-1) 
         flg=flg.type(torch.cuda.FloatTensor)
-        loss=-1*logpt*(1-flg)-flos*flg*0.1
+        loss=-1*logpt*(1-flg)-flos*flg
         return loss.mean()
 
 dataloaders={}              
