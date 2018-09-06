@@ -24,7 +24,7 @@ We add one linear layer(bottleneck), one batchnorm layer and relu.
 
 ## Getting started
 ### Installation
-- Install Pytorch from http://pytorch.org/
+- Install Pytorch(the version is 0.3.0) from http://pytorch.org/
 - Install Torchvision from the source
 ```
 git clone https://github.com/pytorch/vision
