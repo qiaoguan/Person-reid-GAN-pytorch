@@ -140,4 +140,4 @@ It will output Rank@1, Rank@5, Rank@10 and mAP results.
 
 * Many, many thanks to [layumi](https://github.com/layumi/Person-reID_GAN) for his Great work!
   
-### p.s. If you have any questions, you can open an issue!
+### ～～p.s. If you have any questions, you can open an issue!～～ This Repo will no longer be supported for personal reasons!
